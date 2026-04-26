@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./lfs/tmp/style.css" />
+  </head>
+  <body>
+    <div class="quiz-box">
+      <div id="start" class="display">
+        <h2>Welcome to the quiz🎉</h2>
+        <button id="startBtn">Start</button>
+      </div>
+      <div class="hero">
+        <h2 id="progress" style="display: none">Question 1 of 7</h2>
+
+        <div id="quiz-box" style="display: none">
+          <h3 id="question">
+            If const y=2 , and let z=5, what is x when const x = z%y
+          </h3>
+
+          <div id="options">
+            <div class="option">2.5</div>
+            <div class="option">1</div>
+            <div class="option">5</div>
+            <div class="option">2</div>
+          </div>
+
+          <div class="hero">
+            <button id="previousBtn">Previous</button>
+            <button id="nextBtn">Next</button>
+          </div>
+        </div>
+
+        <div id="result-box" class="display" style="display: none">
+          <h2>Quiz Completed🥳</h2>
+          <p id="score"></p>
+          <button onclick="location.reload()">Restart</button>
+        </div>
+      </div>
+
+      <script src="./lfs/tmp/script.js"></script>
+    </div>
+  </body>
+</html>
