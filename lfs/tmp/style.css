@@ -11,8 +11,7 @@ body {
   padding: 20px;
 }
 .quiz-box {
-  width: min(100%, 600px);
-  max-width: 600px;
+  min-width: 700px;
   min-height: 400px;
   background-color: rgb(239, 239, 239);
   border-radius: 33px;
@@ -65,7 +64,34 @@ body {
   color: rgb(111, 108, 108);
   cursor: pointer;
 }
-@media (max-width: 600px) {
+@media (max-width: 300px) {
+  .quiz-box{
+    width:100px;
+  }
+  .display h2 {
+    font-size: 32px;
+  }
+
+  .display button,
+  .hero button {
+    width: 100%;
+  }
+
+  .display button {
+    margin-top: 40px;
+    padding: 16px;
+  }
+
+  .hero button {
+    margin-top: 12px;
+  }
+}
+@media (max-width: 1000px) {
+  .quiz-box{
+    width:700px;
+    padding: 20px;
+    margin-top: 390px;
+  }
   .display h2 {
     font-size: 32px;
   }
